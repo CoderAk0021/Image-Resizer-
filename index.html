@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content = "This is a Free to use image resizer software without any ads and it can compress your image to your desired size in Kb Like 50KB | 20 KB and any desired size , it can compress photos in MB to KB | Image Compressor ">
+   <link rel="shortcut icon" type="image/x-icon" href="/logo.png">
+  <link rel="stylesheet" href="cdn_modules/bootstrap@5.3.3/css/bootstrap.min.css">
+  <title>Image Resizer - Free To use | Convert Your Images Into KB | 20KB | 50Kb and in any size </title>
+</head>
+<body>
+  <!--NavBar -->
+   <nav class="navbar bg-light">
+     <div class="container-fluid">
+       <a class="navbar-brand" href="#">
+         <img src="/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+         Image Resizer
+       </a>
+     </div>
+   </nav>
+   
+   <div class="container my-2">
+     
+     <div class="input-group mb-3">
+       <div class="input-group">
+         <input type="file" accept="image/*"class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+         
+       </div>
+     </div>
+     
+  <div class="input-group mb-3 my-2">
+     <input type="number" id="desiredSize" class="form-control" placeholder="Enter Desired Size in KB" aria-label="Recipient's username" aria-describedby="button-addon2">
+     <button class="btn btn-primary" type="button" id="button-addon2" onclick="compressImage()">Compress</button>
+   </div>
+     
+     <div class="container text-center my-3">
+       <div class="row border rounded-1">
+         <div class="col border-end p-2">
+           <strong>Before Compression</strong>
+         </div>
+         <div class="col p-2">
+           <strong>After Compression</strong>
+         </div>
+       </div>
+     </div>
+     
+     <div class="container text-center my-3">
+       <div class="row border rounded-1">
+         <div class="col border-end p-2 d-flex align-items-center justify-content-center">
+           <img  id ="originalImage"style="display: none;"src="/logo.png" class="img-fluid" alt="...">
+           <div class="d-flex justify-content-center">
+             <div id="originalSpinner"style="display:none;"class="spinner-border" role="status">
+               <span class="visually-hidden">Loading...</span>
+             </div>
+           </div>
+         </div>
+         <div class="col p-2 d-flex align-items-center justify-content-center">
+           <img id="compressedImage"style="display:none;"src="/Screenshot_2024-08-23-22-03-44-84_ee1cec40dcf6eb3919ecbfc5d87e6719.jpg" class="img-fluid" alt="...">
+           <div style="display:none;"class="d-flex justify-content-center">
+             <div id="compressedSpinner"style="display:none;"class="spinner-border" role="status">
+               <span class="visually-hidden">Loading...</span>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     
+     <div class="container text-center my-3">
+       <div class="row border rounded-1">
+         <div class="col border-end p-2 d-flex align-items-center">
+           <span id="originalSize" class="align-middle">Size : 0 KB</span>
+         </div>
+         <div class="col p-2 d-flex align-items-center">
+            <span id="compressedSize" class="align-middle">Size : 0 KB</span>
+         </div>
+       </div>
+     </div>
+     
+     <div class="input-group mb-3 my-2">
+      
+       <a style="display:none;" class="btn btn-primary" href="#" id="downloadLink">Download Compressed Image<a/>
+     </div>
+     
+     
+      <canvas id="canvas" style="display:none;"></canvas>
+      <script src="https://unpkg.com/pica@latest/dist/pica.min.js"></script>
+<script type="text/javascript" src="cdn_modules/bootstrap@5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
