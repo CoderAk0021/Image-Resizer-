@@ -10,5 +10,6 @@
     Image Resizer. Quickly resize image files online at the highest image quality. No software to install and easy to use.
 </p>
 <h2>Screenshots </h2>
-
+<img src="Screenshot/ss2.jpg">
+<img src="Screenshot/ss1.jpg">
 <p>Author: <b>CoderAk0021</b></p>
